@@ -1,11 +1,11 @@
-## STAT9760 - Project 1 - Part 2 Loading NYC Parking Data into ElasticSearch
+## STAT9760 - Project 1 - Part 2 Loading NYC Parking Violation Data into ElasticSearch
 
 ![scrnshot](https://github.com/dannyhuang994/sta9760-NYC_Parking_Data_Loading_into_ES/blob/master/dashboard1.png)
 ![scrnshot](https://github.com/dannyhuang994/sta9760-NYC_Parking_Data_Loading_into_ES/blob/master/dashboard2.png)
 
+The above is the dashboard created using Kiabana. To create your Kiabana visualizations of the NYC Parking Violation Data, simply follow the instructions below:
 
-#### pwd should be the file containing dockerfile and yml file
-
+#### Your current working directory should be the file containing dockerfile and yml file
 
 Start:
 
@@ -18,7 +18,7 @@ This will start ElasticSearch and Kibana.
 **ElasticSearch**: http://localhost:9200
 **Kibana**: http://localhost:5601
 
-Running python:
+Running python and pushing data into ES:
 
 ```
 sudo docker-compose run -e APP_KEY=YOUR_APP_TOKEN -v $(pwd):/app bigdata python main.py --page_size=3 --num_pages=3 --output=result.json
@@ -43,3 +43,9 @@ curl -0 http://localhost:9200/_search?pretty
 ```
 
 -- this prints out a sample of your data from ElasticSearch
+
+Everything has been set up!
+
+Try creating a dashboard for yourself:
+
+**Kibana**: http://localhost:5601
