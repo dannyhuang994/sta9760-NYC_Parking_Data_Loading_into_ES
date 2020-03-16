@@ -17,8 +17,9 @@ This will start ElasticSearch and Kibana.
 Running python:
 
 ```
-docker-compose run -e APP_KEY=YOUR_APP_TOKEN bigdata python main.py --page_size=3 --num_pages=3 --output=result.json
+sudo docker-compose run -e APP_KEY=YOUR_APP_TOKEN -v $(pwd):/app bigdata python main.py --page_size=3 --num_pages=3 --output=result.json
 ```
+
 Replace **YOUR_APP_TOKEN** with the actual token you have obtained.
 
 In this case, you will load 3*3 = 9 data points into ElasticSearch.
@@ -36,3 +37,5 @@ run:
 ```
 curl -0 http://localhost:9200/_search?pretty
 ```
+
+-- this prints out a sample of your data from ElasticSearch
