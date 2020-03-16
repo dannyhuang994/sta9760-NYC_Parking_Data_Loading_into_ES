@@ -1,5 +1,9 @@
 ## STAT9760 - Project 1 - Part 2 Loading NYC Parking Data into ElasticSearch
 
+![scrnshot](https://github.com/dannyhuang994/sta9760-NYC_Parking_Data_Loading_into_ES/blob/master/dashboard1.png)
+![scrnshot](https://github.com/dannyhuang994/sta9760-NYC_Parking_Data_Loading_into_ES/blob/master/dashboard2.png)
+
+
 #### pwd should be the file containing dockerfile and yml file
 
 
